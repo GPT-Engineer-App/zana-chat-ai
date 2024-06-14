@@ -1,17 +1,15 @@
-import { init as coloramaInit, Fore, Style } from 'colorama';
-
-coloramaInit();
+import chalk from 'chalk';
 
 export const colorText = (text, color) => {
   switch (color) {
     case 'red':
-      return `${Fore.RED}${text}${Style.RESET_ALL}`;
+      return chalk.red(text);
     case 'green':
-      return `${Fore.GREEN}${text}${Style.RESET_ALL}`;
+      return chalk.green(text);
     case 'yellow':
-      return `${Fore.YELLOW}${text}${Style.RESET_ALL}`;
+      return chalk.yellow(text);
     case 'blue':
-      return `${Fore.BLUE}${text}${Style.RESET_ALL}`;
+      return chalk.blue(text);
     default:
       return text;
   }
