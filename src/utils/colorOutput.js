@@ -1,15 +1,15 @@
-import colors from 'ansi-colors';
+import chalk from 'chalk';
 
 export const colorText = (text, color) => {
   switch (color) {
     case 'red':
-      return colors.red(text);
+      return chalk.red(text);
     case 'green':
-      return colors.green(text);
+      return chalk.green(text);
     case 'yellow':
-      return colors.yellow(text);
+      return chalk.yellow(text);
     case 'blue':
-      return colors.blue(text);
+      return chalk.blue(text);
     default:
       return text;
   }
